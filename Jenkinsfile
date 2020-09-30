@@ -3,7 +3,8 @@ pipeline{
         stages{
           stage('Make Directory'){
             steps{
-              sh "./run.sh"
+              sh "chmod +x run.sh"      
+              sh "./run.sh"               
             }
           }
         }
